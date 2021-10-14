@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 04 Okt 2021 pada 07.31
+-- Generation Time: 14 Okt 2021 pada 10.21
 -- Versi Server: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -31,17 +31,17 @@ CREATE TABLE IF NOT EXISTS `mahasiswa` (
   `nim` varchar(8) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `alamat` text NOT NULL,
-  `pekerjaan` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+  `pekerjaan` varchar(50) NOT NULL,
+  `foto` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`id`, `nim`, `nama`, `alamat`, `pekerjaan`) VALUES
-(1, '12201212', 'Amar padilah', 'Sindangkasih', 'Programmer'),
-(2, '12201212', 'noval', 'Sindangkasih', 'Programmer'),
-(3, '12201212', 'arfhan', 'Sindangkasih', 'Programmer');
+INSERT INTO `mahasiswa` (`id`, `nim`, `nama`, `alamat`, `pekerjaan`, `foto`) VALUES
+(3, '1808237', 'Mizar Farid', 'Tasikmalaya', 'Programmer', 'images/'),
+(8, '12201212', 'Amar padilah', 'Sindangkasih', 'Programmer', 'images/asw.jpg');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +61,7 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
